@@ -1,9 +1,4 @@
 ﻿using SOLID._1_O.Problem;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SOLID._1_O.Solution;
 internal class Program
@@ -12,8 +7,16 @@ internal class Program
     {
         List<Order> orders = new List<Order>();//Get orders from data source
 
-        ReportingService service = new ReportingService(
+        ReportingService serviceXML = new ReportingService(
                                         new ReportGeneratorXML());//send implementation
-        service.GenerateReport(orders);
+        serviceXML.GenerateReport(orders);
+
+        ReportingService servicePDF = new ReportingService(
+                                        new ReportGeneratorPDF());//send implementation
+        servicePDF.GenerateReport(orders);
+
+        ReportingService serviceJson = new ReportingService(
+                                        new ReportGeneratorJson());//send implementation
+        serviceJson.GenerateReport(orders);
     }
 }
