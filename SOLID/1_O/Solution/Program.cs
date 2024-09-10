@@ -7,16 +7,13 @@ internal class Program
     {
         List<Order> orders = new List<Order>();//Get orders from data source
 
-        ReportingService serviceXML = new ReportingService(
-                                        new ReportGeneratorXML());//send implementation
+        ReportingService serviceXML = new ReportingService(new ReportGeneratorXML());//send implementation
         serviceXML.GenerateReport(orders);
 
-        ReportingService servicePDF = new ReportingService(
-                                        new ReportGeneratorPDF());//send implementation
+        ReportingService servicePDF = new ReportingService(new ReportGeneratorPDF());//send implementation
         servicePDF.GenerateReport(orders);
 
-        ReportingService serviceJson = new ReportingService(
-                                        new ReportGeneratorJson());//send implementation
+        ReportingService serviceJson = new ReportingService(new ReportGeneratorJson());//send implementation
         serviceJson.GenerateReport(orders);
     }
 }
