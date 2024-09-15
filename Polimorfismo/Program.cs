@@ -1,5 +1,9 @@
 ﻿using PolimorfismoFiguras.Dinamico;
 using PolimorfismoFiguras.Estatico;
+using PolimorfismoFiguras.Interfaces;
+using PolimorfismoFiguras.Interfaces.Explicita;
+using PolimorfismoFiguras.Interfaces.Implicita;
+using PolimorfismoFiguras.LISKOV;
 
 //Forma[] formas = new Forma[3];
 //formas[0] = new Circulo(5);
@@ -48,10 +52,46 @@ using PolimorfismoFiguras.Estatico;
 
 //Console.WriteLine();
 
-Empleado empleado = new Empleado();
-Empleado gerente = new SubGerente();
+////Interfaces Implicitas
+//Empleado gerente = new SubGerente();
+//Console.WriteLine(gerente.Descripcion);
 
-Console.WriteLine(empleado.Descripcion);
-Console.WriteLine(gerente.Descripcion);
+//EmailGoogleService emailGoogle = new EmailGoogleService();
+//Console.WriteLine(emailGoogle.Send("", "", "Test"));
+//Console.WriteLine(emailGoogle.Aviso("Send..."));
+////Console.WriteLine();
+
+////Interfaces Explicitas
+//// Metodos se acceden atravez de la Interface y no atraves de la instancia de la clase
+//PDFFilesServices PDFService = new PDFFilesServices("SAT.PDF");
+//IFiles IPDF = PDFService;
+//Console.WriteLine(IPDF.Save("SAT.PDF"));
+//Console.WriteLine(IPDF.Tipo("SAT.PDF"));
+//Console.WriteLine(IPDF.Update("SAT.PDF"));
+
+//XMLFilesServices XMLService = new XMLFilesServices();
+//IFiles IXML = XMLService;
+//Console.WriteLine(IXML.Save("SAT.XML"));
+//Console.WriteLine(IXML.Tipo("SAT.XML"));
+//Console.WriteLine(IXML.Update("SAT.XML"));
+
+
+// esta es la magia de Liskov
+static void ProcesarAve(Ave ave)
+{
+    ave.Comer();
+    ave.Dormir();
+
+}
+
+Perico perico = new Perico();
+Gorrion gorrion = new Gorrion();
+
+ProcesarAve(perico);
+ProcesarAve(gorrion);
+
+
+Console.WriteLine();
+
 
 

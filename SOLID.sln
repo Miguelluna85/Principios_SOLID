@@ -11,9 +11,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "POO", "POO", "{9D0C0B8B-8FB
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Polimorfismo_oregoom", "Polimorfismo_oregoom", "{255CD70D-34A1-49B4-B189-67C4706D5D7B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PolimorfismoFiguras", "PolimorfismoFiguras\PolimorfismoFiguras.csproj", "{2467101B-71BF-497B-A3F4-7196C97A9DB5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PolimorfismoFiguras", "PolimorfismoFiguras\PolimorfismoFiguras.csproj", "{2467101B-71BF-497B-A3F4-7196C97A9DB5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Polimorfismo", "Polimorfismo\Polimorfismo.csproj", "{DC2E14C5-D9BE-4AB7-B78B-0C49F1DC49B0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Polimorfismo", "Polimorfismo\Polimorfismo.csproj", "{DC2E14C5-D9BE-4AB7-B78B-0C49F1DC49B0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ANOTACIONES", "ANOTACIONES", "{1660CF0E-80A5-4D9A-B92D-CF7FEF88293D}"
+	ProjectSection(SolutionItems) = preProject
+		Notas_SOLID.txt = Notas_SOLID.txt
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

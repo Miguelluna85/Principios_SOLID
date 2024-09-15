@@ -1,0 +1,7 @@
+SOLID
+
+S	Simple Responsability	=> Una clase solo tiene que tener una unica resposabilidad
+O	Open/Closed				=> Clases deben de estar cerradas para su modicación pero abiertas para su extensión.
+L	Liskov Sustitution		=> Los Objetos de una clase derivada deberian poder reemplazar los objetos de una clase base sin afectar el comportamiento del programa. Permiten que los objetos de las clases derivadas sean tratados como objetos de su clase base.
+I	Interfaces Segregation	=> Segmentar una unica interface general a varias especificas.
+D	Dependency Inyection	=> Modulos de alto nivel no deben depender de modulos de bajo nivel.
